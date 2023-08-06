@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Page - SR UNIVERSITY</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+</head>
+<body>
+    <br>
+    <b class="time" id="time"></b>
+    <h2> Music Player</h2>
+
+
+    <div class="musicbox">
+        <h2 class="title">
+            Andala Aparanji
+        </h2>
+
+        <img src="https://c.saavncdn.com/906/Andala-Aparanji-Telugu-2022-20220704121212-500x500.jpg" width="200px">
+
+        <br><br>
+        <audio controls autoplay
+
+       src="https://aac.saavncdn.com/906/251bb220b59e2f2640df233e4de6af05_320.mp4" type="audio/mp3">
+
+        
+    </audio>
+    <h2 class="title" style="color: rgb(255, 0, 0)">
+        Project By Anjankumar
+    </h2>
+    <br>
+
+    </div>
+
+    <script type="text/javascript">
+function getDateTime() {
+        var now     = new Date(); 
+        var year    = now.getFullYear();
+        var month   = now.getMonth()+1; 
+        var day     = now.getDate();
+        var hour    = now.getHours();
+        var minute  = now.getMinutes();
+        var second  = now.getSeconds(); 
+
+        if(hour.toString().length == 1) {
+             hour = '0'+hour;
+        }
+        if(minute.toString().length == 1) {
+             minute = '0'+minute;
+        }
+        if(second.toString().length == 1) {
+             second = '0'+second;
+        }   
+
+        if(hour >12){
+            hour = hour%12;
+        }
+        var dateTime = hour+':'+minute+':'+second;   
+         return dateTime;
+    }
+
+    // example usage: realtime clock
+    setInterval(function(){
+        currentTime = getDateTime();
+        document.getElementById("time").innerHTML = currentTime;
+    }, 1000);
+    </script>
+    
+</body>
+</html>

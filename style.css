@@ -1,0 +1,60 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+    font-family: raleway;  
+}
+
+h2{
+    font-size: 1.5rem;
+    font-family: raleway;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    margin-bottom: 30px;
+}
+
+.musicbox{
+    width: 370px;
+    height: 50s0px;
+    background-color: white;
+    border-radius: 10px;
+    border: solid rgb(30, 6, 240) 5px;
+    margin: 0 auto;
+    
+    text-align: center;
+    display: relative;
+}
+h2.title{
+    margin: 20px;
+    color: rgb(255, 0, 166);
+    font-size: 1.3rem;
+}
+
+
+img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+    padding: 5px;
+    border: solid rgb(255, 0, 153) 5px;
+}
+
+.time{
+   
+    font-size: 1.5rem;
+    font-family: raleway;
+    text-align: center;
+    color: white;
+    margin: 10px;
+    margin-bottom: 30px;
+    
+}
+
